@@ -20,7 +20,7 @@ namespace PayrollProject
             }
             set
             {
-                if (hWorked > 0)
+                if (value > 0)
                     hWorked = value;
                 else
                     hWorked = 0;
@@ -29,8 +29,8 @@ namespace PayrollProject
 
         public Staff(string name, float rate)
         {
-            name = NameOfStaff;
-            rate = hourlyRate;
+            NameOfStaff = name;
+            hourlyRate = rate;
         }
 
         public virtual void CalculatePay()

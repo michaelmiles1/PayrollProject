@@ -29,7 +29,7 @@ namespace PayrollProject
 
         public override string ToString()
         {
-            return $"Admin Payroll Mode \n Name: {NameOfStaff} \n Hours Worked: {HoursWorked} \n Base Pay: {BasePay} \n Overtime Hours: {Overtime} \n Total Pay: {TotalPay}";
+            return $"Admin Payroll Mode \n Name: {NameOfStaff} \n Hours Worked: {HoursWorked} \n Base Pay: {BasePay} \n Overtime Pay: {Overtime} \n Total Pay: {TotalPay}";
         }
     }
 }

@@ -39,7 +39,7 @@ namespace PayrollProject
                     }
                     else if (n.GetType() == typeof(Admin))
                     {
-                        WriteLine($"Hours of Overtime: {((Admin)n).Overtime}\n");
+                        WriteLine($"Overtime Pay: {((Admin)n).Overtime}\n");
                     }
 
                     WriteLine("==============================");

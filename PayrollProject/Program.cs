@@ -8,7 +8,7 @@ namespace PayrollProject
     {        
         static void Main(string[] args)
         {
-            List<Staff> myStaff = new List<Staff>();
+            List<Staff> myStaff;
             FileReader fr = new FileReader();
             int month = 0;
             int year = 0;
@@ -53,13 +53,13 @@ namespace PayrollProject
 
             for (int i = 0; i < myStaff.Count; i++)
             {
-                var employee = myStaff[i];
+                Staff employee = myStaff[i];
 
                 try
                 {
                     WriteLine($"Enter hours worked for {employee.NameOfStaff}");
-                    string userInput = ReadLine();
-                    employee.HoursWorked = Convert.ToInt32(userInput);
+                    employee.HoursWorked = Convert.ToInt32(ReadLine());
+                    WriteLine(employee.HoursWorked);
                     employee.CalculatePay();
                     WriteLine(employee);
                 }

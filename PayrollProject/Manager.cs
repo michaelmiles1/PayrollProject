@@ -14,10 +14,17 @@ namespace PayrollProject
         public override void CalculatePay()
         {
             base.CalculatePay();
-            Allowance = 1000;
 
             if (HoursWorked > 160)
+            {
+                Allowance = 1000;
                 TotalPay = BasePay + Allowance;
+            }
+            else
+            {
+                Allowance = 0;
+            }
+                
         }
 
         public override string ToString()
